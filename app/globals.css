@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+:root {
+  --background: var(--color-gray);
+  --font-size-base: 15px;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-montserrat: var(--font-montserrat);
+
+/* Blue */
+  --color-blue-primary: #0F49BD;
+  --color-blue-secondary: #E7EDF8;
+
+  /* Black */
+  --color-black-primary: #111318;
+  --color-black-secondary: #616F89;
+
+  /* White */
+  --color-white-primary: #fff;
+
+  /* Light Blue */
+  --color-light-blue-primary: #2563EB;
+  --color-light-blue-secondary: #EFF6FF;
+  
+  /* Purple */
+  --color-purple-primary: #9333EA;
+  --color-purple-secondary: #eedcff;
+  
+  /* Green */
+  --color-green-primary: #16A34A;
+  --color-green-secondary: #F0FDF4;
+  
+  /* Orange */
+  --color-orange-primary: #EA580C;
+  --color-orange-secondary: #FFEDD5;
+  
+  /* Red */
+  --color-red-primary: #f51b1b;
+  --color-red-secondary: #FEE2E2;
+  
+  /* Yellow */
+  --color-yellow-primary: #D97706;
+  --color-yellow-secondary: #FEF3C7;
+  
+  /* Gray */
+  
+  --color-gray: #F6F6F8;
+
+  /* Spacing */ 
+
+  --spacing-width-sidebar: 288px;
+  --spacing-height-header: 80px;
+  --spacing-width-main: calc(100vw - var(--spacing-width-sidebar));
+  --spacing-height-main: calc(100vh - var(--spacing-height-header));
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: var(--font-size-base);
+
+}
+
+
